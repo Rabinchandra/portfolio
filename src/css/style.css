@@ -4,12 +4,14 @@
   justify-content: space-between;
   margin-top: 16px;
   align-items: center;
+  font-family: Arial;
 }
 .navbar .nav-links *:hover {
   cursor: pointer;
 }
 .navbar .nav-links a {
   color: black;
+  display: inline-block;
 }
 .navbar .nav-links a:not(:last-child) {
   margin-right: 30px;

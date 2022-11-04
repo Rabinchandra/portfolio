@@ -3,6 +3,7 @@
     justify-content: space-between;
     margin-top: 16px;
     align-items: center;
+    font-family: Arial;
 
     .nav-links {
         *:hover {
@@ -11,6 +12,7 @@
 
         a {
             color: black;
+            display: inline-block;
         }
         
         a:not(:last-child) {

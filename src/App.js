@@ -1,7 +1,8 @@
 import './css/style.css';
 import Navbar from './components/Navbar';
 import Showcase from './components/Showcase';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import "animate.css/animate.min.css";
 
 function App() {
   const [isBlack, setIsBlack] = useState(true);
