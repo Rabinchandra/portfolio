@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@700&family=Quicksand:wght@400&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  align-items: center;
+}
+.navbar .nav-links *:hover {
+  cursor: pointer;
+}
+.navbar .nav-links a {
+  color: black;
+}
+.navbar .nav-links a:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar .nav-links img {
+  width: 15px;
+}
+.navbar .nav-links img:hover {
+  opacity: 0.5;
+}
+
+.showcase {
+  margin-top: 150px;
+}
+.showcase .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.showcase .social-links {
+  margin-top: 50px;
+  margin-right: 120px;
+}
+.showcase .social-links a {
+  display: block;
+  transition: opacity 0.2s;
+}
+.showcase .social-links a:hover {
+  opacity: 0.5;
+}
+.showcase .social-links a:not(:last-child) {
+  margin-bottom: 40px;
+}
+.showcase .social-links img {
+  width: 20px;
+}
+.showcase-main {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.showcase-main .main-text {
+  flex: 0.7;
+  max-width: 550px;
+}
+.showcase-main .main-text h1 {
+  font-family: "Open Sans";
+  font-size: 3.3em;
+  margin: 0;
+}
+.showcase-main .main-text small {
+  font-size: 1.5em;
+  font-family: Merriweather;
+  color: gray;
+  display: block;
+  margin: 18px 0;
+}
+.showcase-main .main-text p {
+  font-family: "Quicksand";
+  font-size: 1.5em;
+  color: #444;
+  line-height: 1.4em;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.showcase-main .main-text .contact-btn {
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  border-radius: 50px;
+  font-family: Quicksand;
+  background-color: #7e5af9;
+  color: #fff;
+  font-size: 1.6em;
+  padding: 19px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+.showcase-main .main-text .contact-btn:hover {
+  background-color: #5829f7;
+}
+.showcase-main .main-text .contact-btn img {
+  display: inline-block;
+  width: 35px;
+  margin-left: 14px;
+  transform: rotate(-25deg);
+  margin-top: -15px;
+}
+.showcase-main .main-photo {
+  flex: 0.3;
+  display: flex;
+  align-items: center;
+}
+.showcase-main .main-photo img {
+  width: 270px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  padding: 0 10%;
+}
+
+/*# sourceMappingURL=style.css.map */

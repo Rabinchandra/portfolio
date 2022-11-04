@@ -1,0 +1,19 @@
+@import 'mixins';
+@import 'variables';
+@import 'navbar';
+@import 'showcase';
+@import 'fonts';
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.App {
+    padding: 0 10%;
+}

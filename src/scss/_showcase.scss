@@ -1,0 +1,96 @@
+.showcase {
+    margin-top: 150px;
+    // border: 1px solid blue;
+    
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .social-links {
+        // border: 1px solid red;
+        margin-top: 50px;
+        margin-right: 120px;
+
+        a {
+            display: block;
+            transition: opacity .2s;
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+
+        a:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        img {
+            width: 20px;
+        }
+        
+    }
+    &-main {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+
+        .main-text {
+            flex: .7;
+            // border: 1px solid green;
+            max-width: 550px;
+            h1 {
+                font-family: 'Open Sans';
+                font-size: 3.3em;
+                margin: 0;
+            }
+            
+            small {
+                font-size: 1.5em;
+                font-family: Merriweather;
+                color: $primary-light-text-color;
+                display: block;
+                margin: 18px 0;
+            }
+
+            p {
+                font-family: 'Quicksand';
+                font-size: 1.5em;
+                color: #444;
+                line-height: 1.4em;
+                margin-top: 40px;
+                margin-bottom: 30px;
+            }
+
+            .contact-btn {
+                @include button;
+                background-color: $primary-color;
+                color: #fff;
+                font-size: 1.6em;
+                padding:  19px 23px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 200px;
+
+                img {
+                    display: inline-block;
+                    width: 35px;
+                    margin-left: 14px;
+                    transform: rotate(-25deg);
+                    margin-top: -15px;
+                }
+            }
+        }
+
+        .main-photo {
+            flex: .3;
+            // border: 1px solid blue;
+            display: flex;
+            align-items: center;
+            img {
+                width: 270px;
+            }
+        }
+    }
+}

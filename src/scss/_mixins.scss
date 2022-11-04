@@ -1,0 +1,12 @@
+@mixin button {
+    border: none;
+    outline: none;
+
+    transition: background-color .3s;
+    border-radius: 50px;
+    font-family: Quicksand;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
