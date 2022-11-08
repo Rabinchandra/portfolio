@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'showcase';
 @import 'fonts';
+@import 'about_me';
 
 body {
     margin: 0;
@@ -16,4 +17,47 @@ a {
 
 .App {
     padding: 0 10%;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+    font-family: 'Open Sans';
+    font-size: 2.5em;
+    margin-top: 150px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.sub-header {
+    font-family: 'Eb Garamond';
+    font-size: 1.7em;
+    text-align: center;
+    display: block;
+    color: $primary-light-text-color;
+}
+
+.primary-text {
+    font-family: 'Quicksand';
+    color: #444;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        margin-top: 2em;
+        font-size: 2em;
+    }
+
+    .sub-header {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .primary-text {
+        font-size: 19px;
+    }
 }

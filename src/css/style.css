@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@700&family=Quicksand:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Merriweather:wght@300&family=Open+Sans:wght@700&family=Quicksand:wght@300&display=swap");
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -23,6 +23,11 @@
   opacity: 0.5;
 }
 
+@media screen and (max-width: 700px) {
+  .navbar {
+    display: none;
+  }
+}
 .showcase {
   margin-top: 150px;
 }
@@ -38,8 +43,8 @@
   display: block;
   transition: opacity 0.2s;
 }
-.showcase .social-links a:hover {
-  opacity: 0.5;
+.showcase .social-links img:hover {
+  opacity: 0.7;
 }
 .showcase .social-links a:not(:last-child) {
   margin-bottom: 40px;
@@ -54,24 +59,22 @@
 }
 .showcase-main .main-text {
   flex: 0.7;
+  margin-left: 50px;
   max-width: 550px;
 }
 .showcase-main .main-text h1 {
-  font-family: "Open Sans";
   font-size: 3.3em;
   margin: 0;
+  text-align: left;
 }
 .showcase-main .main-text small {
-  font-size: 1.5em;
-  font-family: Merriweather;
-  color: gray;
+  font-size: 1.8em;
   display: block;
   margin: 18px 0;
+  text-align: left;
 }
 .showcase-main .main-text p {
-  font-family: "Quicksand";
-  font-size: 1.5em;
-  color: #444;
+  margin-left: 0;
   line-height: 1.4em;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -82,6 +85,8 @@
   transition: background-color 0.3s;
   border-radius: 50px;
   font-family: Quicksand;
+  background-color: #7e5af9;
+  color: #fff;
   background-color: #7e5af9;
   color: #fff;
   font-size: 1.6em;
@@ -109,7 +114,143 @@
 .showcase-main .main-photo img {
   width: 270px;
 }
+.showcase .scroll-icon {
+  margin-top: 100px;
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+}
+.showcase .scroll-icon:hover {
+  cursor: pointer;
+}
+.showcase .scroll-icon img.down-arrow-icon {
+  width: 14px;
+  animation: animateUp 1s infinite;
+  animation-direction: alternate;
+}
+.showcase .scroll-icon img:first-child {
+  width: 20px;
+}
+.showcase .scroll-icon div {
+  margin: 0 7px;
+}
 
+@media screen and (max-width: 1200px) {
+  .showcase .main-photo img {
+    width: 100%;
+  }
+  .showcase .scroll-icon {
+    margin-left: 60px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .showcase {
+    margin-top: 20%;
+    margin-bottom: 0;
+  }
+  .showcase .social-links {
+    margin-right: 0px;
+  }
+  .showcase .main-text {
+    margin-top: 50px;
+  }
+  .showcase .main-text h1 {
+    font-size: 2.8em;
+  }
+  .showcase .main-text p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .showcase .main-text .contact-btn {
+    font-size: 1.3em;
+    width: 180px;
+  }
+  .showcase .main-photo {
+    width: 100%;
+  }
+  .showcase .main-photo img {
+    width: 200px;
+    display: block;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  .showcase-main {
+    flex-direction: column-reverse;
+  }
+  .showcase .main-text {
+    margin-left: -20px;
+  }
+  .showcase .main-text h1 {
+    font-size: 2.8em;
+  }
+  .showcase .main-text small {
+    font-size: 1.8em;
+  }
+  .showcase .scroll-icon {
+    margin-top: 50px;
+    margin-left: 0;
+  }
+}
+@keyframes animateUp {
+  from {
+    transform: translateY(-2px);
+  }
+  to {
+    transform: translateY(2px);
+  }
+}
+.about-me-main {
+  display: flex;
+  justify-content: space-around;
+}
+.about-me-main .photo {
+  flex: 0.4;
+  text-align: center;
+}
+.about-me-main .photo img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 40%;
+  display: block;
+}
+.about-me-main .primary-text {
+  flex: 0.4;
+  margin-top: 50px;
+}
+.about-me-main .primary-text p {
+  margin: 0;
+}
+.about-me-main .primary-text .download-cv-btn {
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  border-radius: 50px;
+  font-family: Quicksand;
+  background-color: #7e5af9;
+  color: #fff;
+  font-size: 1em;
+  padding: 12px 24px;
+  margin-top: 30px;
+}
+.about-me-main .primary-text .download-cv-btn:hover {
+  background-color: #5829f7;
+}
+
+@media screen and (max-width: 700px) {
+  .about-me-main {
+    margin-top: 40px;
+    display: block;
+  }
+  .about-me-main .photo {
+    width: 200px;
+    margin: auto;
+  }
+  .about-me-main .primary-text {
+    flex: 0.5;
+    margin-top: 20px;
+  }
+}
 body {
   margin: 0;
   padding: 0;
@@ -122,6 +263,47 @@ a {
 
 .App {
   padding: 0 10%;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.header {
+  font-family: "Open Sans";
+  font-size: 2.5em;
+  margin-top: 150px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.sub-header {
+  font-family: "Eb Garamond";
+  font-size: 1.7em;
+  text-align: center;
+  display: block;
+  color: #95989a;
+}
+
+.primary-text {
+  font-family: "Quicksand";
+  color: #444;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1050px) {
+  .header {
+    margin-top: 2em;
+    font-size: 2em;
+  }
+  .sub-header {
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .primary-text {
+    font-size: 19px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

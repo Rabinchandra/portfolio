@@ -2,7 +2,9 @@ import githubBlackLogo from '../img/github-black.png';
 import linkedinBlackLogo from '../img/linkedin-black.png';
 import twitterBlackLogo from '../img/twitter-black.png';
 import mailPic from '../img/mail.png';
-import mainPhoto from '../img/main-photo-color.png';
+import mainPhoto from '../img/main-photo-black-white.png';
+import downArrowIcon from '../img/down-arrow-black.png';
+import mouseIcon from '../img/mouse-black.png'
 import Typewriter from 'typewriter-effect';
 
 const Showcase = () => {
@@ -10,22 +12,22 @@ const Showcase = () => {
         <div className={"showcase"}>
             <div className="wrapper">
                 <div className="social-links">
-                    <a href="#">
+                    <a href="#" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3s'}}>
                         <img src={linkedinBlackLogo} alt="" />
                     </a>
-                    <a href="">
+                    <a href="#" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.2s'}}>
                         <img src={githubBlackLogo} alt=""/>
                     </a>
-                    <a href="">
+                    <a href="" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.5s'}}>
                         <img src={twitterBlackLogo} alt=""/>
                     </a>
                 </div>
                 <div className="showcase-main">
                     <div className="main-text">
                         
-                        <h1 className="animate__animated animate__fadeInUp animate__delay-2s">Hi, I'm Rabin</h1>
+                        <h1 className="animate__animated animate__fadeInUp animate__delay-2s header">Hi, I'm Rabin</h1>
                         
-                        <small className='animate__animated animate__fadeInUp' style={{animationDelay: '2.5s'}}>
+                        <small className='animate__animated animate__fadeInUp sub-header' style={{animationDelay: '2.5s'}}>
                             <Typewriter
                                 options={{
                                     strings: ['Frontend Developer', 'Programmer', 'Designer'],
@@ -34,7 +36,7 @@ const Showcase = () => {
                                 }}
                             />
                         </small>
-                        <p className='animate__animated animate__fadeInUp' style={{animationDelay: '2.7s'}}>
+                        <p className='animate__animated animate__fadeInUp primary-text' style={{animationDelay: '2.7s'}}>
                             High level experience in Web Design and developent knowledge,
                             producing<br /> quality work.
                         </p>
@@ -49,6 +51,13 @@ const Showcase = () => {
                         <img src={mainPhoto} alt="" className='animate__animated animate__bounceIn' style={{animationDelay: '4.5s'}}/>
                     </div>
                 </div>
+            </div>
+            <div className="scroll-icon">
+                <img src={mouseIcon} alt="" className='animate__animated animate__fadeInUp' style={{animationDelay: '5s', transform: 'rotate(35deg)'}}/>
+                <div className='animate__animated animate__fadeInUp' style={{animationDelay: '5.2s'}}>
+                    Scroll down
+                </div> 
+                <img src={downArrowIcon} alt="" className="animate__animated animate__fadeInUp animate__bounce down-arrow-icon" style={{animationDelay: '5.5s'}}/>
             </div>
         </div>
     )
