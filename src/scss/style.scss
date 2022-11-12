@@ -4,19 +4,41 @@
 @import 'showcase';
 @import 'fonts';
 @import 'about_me';
+@import 'skills';
+@import 'mobilenavbar';
 
-body {
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-a {
-    text-decoration: none;
 }
 
 .App {
     padding: 0 10%;
+    transition: background-color 1s, color 1s;
+    padding-bottom: 1000px;
+    // box-sizing: border-box;
+    // border: 1px solid black;
+}
+
+.App.text-white {
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #444;
+}
+
+.text-white a {
+    text-decoration: none;
+    color: #fff;
+}
+.text-white {
+    color: #fff;
 }
 
 * {
@@ -43,6 +65,10 @@ a {
     font-family: 'Quicksand';
     color: #444;
     font-size: 1.5em;
+}
+
+.text-white .primary-text {
+    color: #fff;
 }
 
 @media screen and (max-width: 1050px) {

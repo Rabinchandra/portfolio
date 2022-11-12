@@ -1,9 +1,10 @@
 import {AnimationOnScroll} from 'react-animation-on-scroll';
 import photo from '../img/developer-2-black-white.png';
+import downloadPhoto from '../img/download.png';
 
 const AboutMe = () => {
     return (
-        <div className="about-me" style={{marginBottom: '1000px'}}>
+        <div className="about-me" id="about-me">
             <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
                 <h1 className="header">About Me</h1>
             </AnimationOnScroll>          
@@ -24,9 +25,33 @@ const AboutMe = () => {
                         </p>
                     </AnimationOnScroll>
 
-                    <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: ''}} animateOnce={true}>
+                    <div className="count">
                         <div>
-                            <button className="download-cv-btn">Download CV</button>
+                            <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: ''}} animateOnce={true}>
+                                <h2>02+</h2>
+                            </AnimationOnScroll>
+                            <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: ''}} animateOnce={true}>
+                                <p>
+                                    Years of Experience
+                                </p>
+                            </AnimationOnScroll>
+                        </div>
+                    
+                        <div>
+                            <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: '.5s'}} animateOnce={true}>
+                                <h2>05+</h2>
+                            </AnimationOnScroll>
+                            <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: '.5s'}} animateOnce={true}>
+                                <p>
+                                    Completed Projects
+                                </p>
+                            </AnimationOnScroll>
+                        </div>
+                    </div>                   
+
+                    <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: '.5s'}} animateOnce={true}>
+                        <div>
+                            <button className="download-cv-btn">Download CV <img src={downloadPhoto} alt="" /></button>
                         </div>
                     </AnimationOnScroll>
                 </div>
