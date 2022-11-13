@@ -6,6 +6,8 @@
 @import 'about_me';
 @import 'skills';
 @import 'mobilenavbar';
+@import 'services';
+@import 'portfolio';
 
 html, body {
     width: 100%;
@@ -43,6 +45,10 @@ a {
 
 * {
     -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 .header {

@@ -1,5 +1,5 @@
 import blackMoonIcon from '../img/black_half_moon_icon.png';
-import whiteMoonIcon from '../img/white-moon.png';
+// import whiteMoonIcon from '../img/white-moon.png';
 
 const Navbar = ({isBlack, switchColor}) => {
     return (
@@ -13,7 +13,7 @@ const Navbar = ({isBlack, switchColor}) => {
                 <a href="#" className='animate__animated animate__fadeInDown' style={{animationDelay: '1.4s'}}>Portfolio</a>
                 <a href="#" className='animate__animated animate__fadeInDown' style={{animationDelay: '1.5s'}}>Contact</a>
 
-                <img src={isBlack? whiteMoonIcon:blackMoonIcon } title="Change color"  className='animate__animated animate__fadeInDown' alt="" style={{animationDelay: '1.6s'}} onClick={switchColor}/>
+                <img src={blackMoonIcon} title="Change color"  className='animate__animated animate__fadeInDown' alt="" style={{animationDelay: '1.6s'}} onClick={switchColor}/>
             </div>
         </nav>
     )

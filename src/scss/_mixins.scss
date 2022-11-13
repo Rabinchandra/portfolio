@@ -12,3 +12,9 @@
         background-color: darken($primary-color, 10%);
     }
 }
+
+@mixin user-select-disable {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

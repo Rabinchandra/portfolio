@@ -6,6 +6,8 @@ import Showcase from './components/Showcase';
 import AboutMe from './components/AboutMe';
 import Skills from './components/Skills';
 import MobileNavbar from './components/MobileNavbar';
+import Services from './components/Services';
+import Portfolio from './components/Portfolio';
 
 
 function App() {
@@ -22,6 +24,8 @@ function App() {
       <Showcase isBlack={isBlack}/>
       <AboutMe />
       <Skills isBlack={isBlack}/>
+      <Services isBlack={isBlack}/>
+      <Portfolio isBlack={isBlack}/>
     </div>
   );
 }

@@ -1,0 +1,106 @@
+.portfolio {
+    .sub-header {
+        margin-bottom: 50px;
+    }
+
+}
+
+.project-slide {
+    width: 600px !important;
+    background-color: #fff;
+    display: flex;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    
+    img {
+        display: block;
+        width: 50px;
+        flex: .3;
+        margin-right: 20px;
+    }
+    div {
+        flex: .6;
+        .button {
+            @include button;
+            display: block;
+            width: 100px;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 15px;
+            margin-bottom: 50px;
+        }
+        h2 {
+            color: #333;
+            font-family: 'Open Sans';
+            
+        }
+        p {
+            font-family: 'Eb Garamond';
+            font-size: 1.5em;
+            color: $primary-light-text-color;
+        }
+
+    }
+}
+
+.slider-left i, .slider-right i {
+    color: #333;
+}
+.portfolio.text-white {
+    .slider-left i, .slider-right i {
+        color: #fff;
+    } 
+}
+
+
+@media screen and (max-width: 800px) {
+    .portfolio {
+        .sub-header {
+            margin-bottom: 80px;
+        }
+        .react-3d-carousel {
+            // border: 1px solid red;
+            box-sizing: border-box;
+            padding: 100px;
+            height: 10px !important;
+            transform: scale(1.2);
+    
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    .project-slide {
+        flex-direction: column;
+        padding: 1.5em;
+        overflow: hidden;
+        
+        img {
+            width: 80px;
+            margin-bottom: 10px;
+            display: block;
+            margin: auto;
+            // border: 1px solid red;
+        }
+
+
+        div {
+            h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 15px;
+            }
+
+            .button {
+                font-size: 12px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

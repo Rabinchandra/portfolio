@@ -51,7 +51,7 @@ const Skills = ({isBlack}) => {
                     </div>
                 </AnimationOnScroll>
 
-                <AnimationOnScroll animateIn="animate__fadeInUp" className='box box-5' style={{animationDelay: '.7s'}} animateOnce={true}> 
+                <AnimationOnScroll animateIn="animate__fadeInUp" className='box box-5' style={{animationDelay: '1s'}} animateOnce={true}> 
                     <div>
                         <img src={firebaseIcon} alt="" />
                         <h1>Firebase</h1>
