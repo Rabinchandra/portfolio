@@ -8,6 +8,8 @@
 @import 'mobilenavbar';
 @import 'services';
 @import 'portfolio';
+@import 'contact';
+@import 'footer';
 
 html, body {
     width: 100%;
@@ -21,9 +23,6 @@ html, body {
 .App {
     padding: 0 10%;
     transition: background-color 1s, color 1s;
-    padding-bottom: 1000px;
-    // box-sizing: border-box;
-    // border: 1px solid black;
 }
 
 .App.text-white {

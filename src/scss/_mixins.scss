@@ -7,7 +7,7 @@
     font-family: Quicksand;
     background-color: $primary-color;
     color: #fff;
-
+    cursor: pointer;
     &:hover {
         background-color: darken($primary-color, 10%);
     }
@@ -18,3 +18,4 @@
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none; /* Standard syntax */
 }
+

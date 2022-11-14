@@ -86,6 +86,7 @@
   font-family: Quicksand;
   background-color: #7e5af9;
   color: #fff;
+  cursor: pointer;
   background-color: #7e5af9;
   color: #fff;
   font-size: 1.6em;
@@ -229,6 +230,7 @@
   font-family: Quicksand;
   background-color: #7e5af9;
   color: #fff;
+  cursor: pointer;
   font-size: 1em;
   padding: 12px 24px;
   margin-top: 50px;
@@ -406,7 +408,7 @@
   background-color: #fff;
   z-index: 100;
   box-shadow: 0px 0px 20px 5px rgba(163, 163, 163, 0.3);
-  transition: background-color 1s;
+  transition: background-color 1s, bottom 1s;
 }
 .mobilenavbar.text-white {
   background-color: #333;
@@ -532,8 +534,14 @@
     margin-bottom: 40px;
   }
 }
+.portfolio {
+  height: 620px;
+}
 .portfolio .sub-header {
   margin-bottom: 50px;
+}
+.portfolio .sub-header .react-3d-carousel {
+  height: 500px;
 }
 
 .project-slide {
@@ -562,6 +570,7 @@
   font-family: Quicksand;
   background-color: #7e5af9;
   color: #fff;
+  cursor: pointer;
   display: block;
   width: 100px;
   padding: 12px 8px;
@@ -598,7 +607,6 @@
   .portfolio .react-3d-carousel {
     box-sizing: border-box;
     padding: 100px;
-    height: 10px !important;
     transform: scale(1.2);
   }
   .portfolio .react-3d-carousel img {
@@ -626,6 +634,160 @@
     margin-bottom: 0;
   }
 }
+.contact {
+  padding-bottom: 4em;
+}
+.contact .header {
+  margin-top: 0;
+}
+.contact .wrapper {
+  margin-top: 100px;
+  display: flex;
+}
+.contact .wrapper .contact-links > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.contact .wrapper .contact-links > div h3 {
+  font-family: "Open Sans";
+  margin: 0;
+  margin-bottom: 10px !important;
+}
+.contact .wrapper .contact-links > div a {
+  color: #95989a;
+}
+.contact .wrapper .contact-links > div img {
+  width: 40px;
+  margin-right: 20px;
+}
+.contact .wrapper .input {
+  margin-left: 50px;
+  flex: 1;
+}
+.contact .wrapper .input input, .contact .wrapper .input textarea {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-family: "Quicksand";
+  width: 100%;
+  padding: 17px 20px;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(242, 237, 249, 0.9137254902);
+}
+.contact .wrapper .input div {
+  display: flex;
+}
+.contact .wrapper .input div input:first-child {
+  margin-right: 10px;
+}
+.contact .wrapper .input button {
+  border: none;
+  outline: none;
+  transition: background-color 0.3s;
+  border-radius: 50px;
+  font-family: Quicksand;
+  background-color: #7e5af9;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+}
+.contact .wrapper .input button:hover {
+  background-color: #5829f7;
+}
+.contact .wrapper .input button img {
+  width: 35px;
+  margin-left: 12px;
+  transform: rotate(-25deg);
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 850px) {
+  .contact .wrapper {
+    flex-direction: column;
+  }
+  .contact .wrapper .input {
+    margin-left: 0;
+  }
+  .contact .wrapper .input input, .contact .wrapper .input textarea {
+    font-size: 15px;
+  }
+  .contact .wrapper .input button {
+    font-size: 1em;
+  }
+  .contact .wrapper .input button img {
+    width: 25px;
+  }
+}
+.footer {
+  background-color: #7e5af9;
+  color: #fff;
+  padding: 4em 6em;
+}
+.footer .wrapper {
+  display: flex;
+}
+.footer .wrapper .logo h1 {
+  font-family: "Open Sans";
+  margin: 0;
+}
+.footer .wrapper .logo small {
+  font-family: "Quicksand";
+  font-size: 1.2em;
+}
+.footer .wrapper .footer-links {
+  text-align: center;
+  flex: 1;
+}
+.footer .wrapper .footer-links .page-links a {
+  color: #fff;
+  display: inline-block;
+  margin: 0 12px;
+}
+.footer .wrapper .footer-links .page-links a:hover {
+  opacity: 0.8;
+}
+.footer .wrapper .footer-links .social-links {
+  margin-top: 20px;
+}
+.footer .wrapper .footer-links .social-links a {
+  width: 20px;
+  display: inline-block;
+  margin: 0 14px;
+}
+.footer .wrapper .footer-links .social-links a img {
+  width: 100%;
+}
+.footer .wrapper .footer-links .social-links a:hover {
+  opacity: 0.8;
+}
+.footer .copyright {
+  margin-top: 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 3em 2em;
+  }
+  .footer .logo h1 {
+    font-size: 1.5em;
+  }
+  .footer .logo small {
+    font-size: 15px !important;
+  }
+  .footer .page-links a:last-child {
+    display: none !important;
+  }
+  .footer .copyright {
+    font-size: 12px;
+  }
+}
 html, body {
   width: 100%;
   height: 100%;
@@ -638,7 +800,6 @@ html, body {
 .App {
   padding: 0 10%;
   transition: background-color 1s, color 1s;
-  padding-bottom: 1000px;
 }
 
 .App.text-white {

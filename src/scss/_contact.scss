@@ -1,0 +1,93 @@
+.contact {
+    padding-bottom: 4em;
+    .header {
+        margin-top: 0;
+    }
+
+    .wrapper {
+        margin-top: 100px;
+        display: flex;
+        .contact-links {
+            & > div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 60px;
+                h3 {
+                    font-family: 'Open Sans';
+                    margin: 0;
+                    margin-bottom: 10px !important;
+                }
+                a {
+                    color: $primary-light-text-color;
+                }
+                img {
+                    width: 40px;
+                    margin-right: 20px;
+                }
+            }
+        }
+        
+        .input {
+            margin-left: 50px;
+            flex: 1;
+            input, textarea {
+                // border: 1px solid red;
+                border: none;
+                outline: none;
+                font-size: 18px;
+                font-family: 'Quicksand';
+                width: 100%;
+                padding: 17px 20px;
+                box-sizing: border-box;
+                margin-bottom: 12px;
+                border-radius: 20px 20px 0 0;
+                background-color: #f2edf9e9;
+            }
+
+            div {
+                display: flex;
+                input:first-child {
+                    margin-right: 10px;
+                }
+            }
+
+            button {
+                @include button;
+                font-size: 1.3em;
+                padding: 18px 20px;
+                display: flex;
+                align-items: center;
+                img {
+                    width: 35px;
+                    margin-left: 12px;
+                    transform: rotate(-25deg);
+                    margin-top: -10px;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact {
+        .wrapper {
+            flex-direction: column;
+
+            .input {
+                margin-left: 0;
+                input, textarea {
+                    font-size: 15px;
+                }
+                button {
+                    font-size: 1em;
+                    img {
+                        width: 25px;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

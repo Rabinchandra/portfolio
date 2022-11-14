@@ -1,5 +1,4 @@
 import {Carousel} from '3d-react-carousal';
-import "https://kit.fontawesome.com/c12e219398.js";
 import netflixGif from '../img/netflix.gif';
 import photographyGif from '../img/photography.gif';
 import covidGif from '../img/covid.gif';
@@ -32,7 +31,7 @@ const Portfolio = ({isBlack}) => {
     <Project title={"WhatsApp Clone"} img={whatsappGif} description={"A simple WhatsApp clone app where you can have chat by login"} url="https://rabinwhatsappclone.netlify.app/"/>,
   ];
   return (
-    <div className={isBlack?"portfolio text-white":"portfolio"}>
+    <div className={isBlack?"portfolio text-white":"portfolio"} id="portfolio">
       <AnimationOnScroll animateIn="animate__fadeInUp"  style={{animationDelay: '.5s'}} animateOnce={true}>
         <h1 className="header">Portfolio</h1>
       </AnimationOnScroll>

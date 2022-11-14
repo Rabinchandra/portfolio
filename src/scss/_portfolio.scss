@@ -1,6 +1,12 @@
 .portfolio {
+    // border: 1px solid red;
+    height: 620px;
     .sub-header {
         margin-bottom: 50px;
+
+        .react-3d-carousel {
+            height: 500px;
+        }
     }
 
 }
@@ -65,7 +71,6 @@
             // border: 1px solid red;
             box-sizing: border-box;
             padding: 100px;
-            height: 10px !important;
             transform: scale(1.2);
     
             img {

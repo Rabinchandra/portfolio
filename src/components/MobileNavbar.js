@@ -8,14 +8,25 @@ import servicesPng from '../img/services.png';
 import portfolioPng from '../img/portfolio.png';
 import contactPng from '../img/contact.png';
 import chevronDownPng from '../img/chevron-down.png';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const MobileNavbar = ({isBlack, switchColor}) => {
     const [isHide, setIsHide] = useState(true);
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        const footerElem = document.querySelector('.footer');
+        window.onscroll = () => {
+            const elemTop = footerElem.getBoundingClientRect().top;
+            const windowTop = window.innerHeight;
+            const value = (windowTop/elemTop).toPrecision(2);
+            setValue(value);
+        }
+    }, []);
 
     return (
         <>
-            <div className={isBlack? "mobilenavbar text-white": "mobilenavbar"} >
+            <div className={isBlack? "mobilenavbar text-white": "mobilenavbar"} style={value>=1?{bottom: '-100px'}:{bottom:'0'}}>
                 <div className='name'>Rabin</div>
                 <div>
                     <img src={blackMoonIcon} alt="" onClick={switchColor}/>
