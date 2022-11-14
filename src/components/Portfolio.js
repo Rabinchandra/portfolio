@@ -24,11 +24,11 @@ const Project = ({img, title, description, url}) => {
 
 const Portfolio = ({isBlack}) => {
   let slides = [
-    <Project title={"Covid 19 Tracker"} img={covidGif} description={"A Covid 19 tracker app where you can find info on covid"} url="https://rabincovid19tracker.netlify.app/"/>,
     <Project title={"Netflix Clone"} img={netflixGif} description={"A full mobile responsive website with Sign up and Sign  functionality"} url="https://rabinnetflix.vercel.app/"/>,
     <Project title={"Newton Photography"} img={photographyGif} description={"A  photography website having Admin login feature"} url="https://newtonksh.netlify.app/"/>,
     <Project title={"Instagram Clone"} img={instagramGif} description={"An Instagram clone app where you can upload, like and comment on photos"} url="https://rabincovid19tracker.netlify.app/"/>,
     <Project title={"WhatsApp Clone"} img={whatsappGif} description={"A simple WhatsApp clone app where you can have chat by login"} url="https://rabinwhatsappclone.netlify.app/"/>,
+    <Project title={"Covid 19 Tracker"} img={covidGif} description={"A Covid 19 tracker app where you can find info on covid"} url="https://rabincovid19tracker.netlify.app/"/>,
   ];
   return (
     <div className={isBlack?"portfolio text-white":"portfolio"} id="portfolio">
