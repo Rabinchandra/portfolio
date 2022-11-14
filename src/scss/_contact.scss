@@ -42,10 +42,13 @@
                 margin-bottom: 12px;
                 border-radius: 20px 20px 0 0;
                 background-color: #f2edf9e9;
+                flex: 1;
             }
 
             div {
                 display: flex;
+                width: 100%;
+
                 input:first-child {
                     margin-right: 10px;
                 }

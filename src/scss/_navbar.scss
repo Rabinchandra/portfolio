@@ -4,7 +4,10 @@
     padding-top: 16px;
     align-items: center;
     font-family: Arial;
-
+    .logo-name {
+        font-family: 'Great Vibes';
+        font-size: 1.4em;
+    }
     .nav-links {
         *:hover {
             cursor: pointer;

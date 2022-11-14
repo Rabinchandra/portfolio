@@ -19,13 +19,13 @@ const Footer = () => {
                     <a href="#contact">Contact Me</a>
                 </div>
                 <div className="social-links">
-                    <a href="">
+                    <a href="https://m.facebook.com/100007235292916" target="blank">
                         <img src={fbPng} alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://www.instagram.com/rabinyen/" target="_blank">
                         <img src={instaPng} alt="" />
                     </a>
-                    <a href="">
+                    <a href="https://twitter.com/RabintechT" target="_blank">
                         <img src={twitterPng} alt="" />
                     </a>
                 </div>

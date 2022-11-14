@@ -50,9 +50,9 @@ const AboutMe = () => {
                     </div>                   
 
                     <AnimationOnScroll animateIn="animate__fadeInUp" style={{animationDelay: '.5s'}} animateOnce={true}>
-                        <div>
-                            <button className="download-cv-btn">Download CV <img src={downloadPhoto} alt="" /></button>
-                        </div>
+                        <form method="get" action="resume.pdf">
+                            <button type="submit" className="download-cv-btn">Download CV <img src={downloadPhoto} alt="" /></button>
+                        </form>
                     </AnimationOnScroll>
                 </div>
             </div>      
