@@ -9,7 +9,6 @@ import MobileNavbar from './components/MobileNavbar';
 import Services from './components/Services';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
-import "https://kit.fontawesome.com/c12e219398.js";
 import Footer from './components/Footer';
 
 function App() {
