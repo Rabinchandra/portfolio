@@ -57,11 +57,39 @@
                 padding: 18px 20px;
                 display: flex;
                 align-items: center;
+                position: relative;
+                overflow: hidden;
                 img {
+                    transition: transform .5s;
                     width: 35px;
                     margin-left: 12px;
-                    transform: rotate(-25deg);
-                    margin-top: -10px;
+                }
+                
+                &::before {
+                    // @include button;
+                    transition-duration: 1s;
+                    box-sizing: border-box;
+                    content: 'Message Sent!';
+                    position: absolute;
+                    background-color: #09c3b0;
+                    bottom: 0px;
+                    left: -100%;
+                    right: 0;
+                    top: 0;
+                    padding: 20px 20px;
+                    width: 100%;
+                    overflow: hidden;
+                }
+            }
+
+            button.has-successfully-sent {
+                img {
+                    transform: translate(50px, -50px) scale(1.2);
+                }
+                &::before {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
                 }
             }
         }

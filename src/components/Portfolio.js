@@ -16,7 +16,7 @@ const Project = ({img, title, description, url}) => {
         <p>
           {description}
         </p>
-        <a href={url} className="button" target="_blank">Visit site <i class="fa fa-chevron-right"></i></a>
+        <a href={url} className="button" target="_blank">Visit site <i className="fa fa-chevron-right"></i></a>
       </div>
     </div>
   )

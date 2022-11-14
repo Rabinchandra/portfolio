@@ -18,13 +18,13 @@ const Showcase = ({isBlack}) => {
         <div className="showcase" id="showcase">
             <div className="wrapper">
                 <div className="social-links">
-                    <a href="#" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3s'}}>
+                    <a href="https://www.linkedin.com/in/rabinchandra-yendrembam-731987201/" className='animate__animated animate__fadeInLeft' target='_blank' style={{animationDelay: '3s'}}>
                         <img src={isBlack? linkedinWhiteLogo : linkedinBlackLogo} alt="" />
                     </a>
-                    <a href="#" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.2s'}}>
+                    <a href="https://github.com/Rabinchandra" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.2s'}} target='_blank' >
                         <img src={isBlack? githubWhiteLogo : githubBlackLogo} alt=""/>
                     </a>
-                    <a href="" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.5s'}}>
+                    <a href="https://twitter.com/RabintechT" className='animate__animated animate__fadeInLeft' style={{animationDelay: '3.5s'}} target='_blank' >
                         <img src={isBlack? twitterWhiteLogo : twitterBlackLogo} alt=""/>
                     </a>
                 </div>
@@ -47,7 +47,7 @@ const Showcase = ({isBlack}) => {
                             producing<br /> quality work.
                         </p>
 
-                        <a href="#" className='contact-btn animate__animated animate__fadeInUp' style={{animationDelay: '3.5s'}}>
+                        <a href="#contact" className='contact-btn animate__animated animate__fadeInUp' style={{animationDelay: '3.5s'}}>
                             Contact Me
                             <img src={mailPic} alt="" />
                         </a>

@@ -3,8 +3,27 @@ import phonePng from '../img/contact-phone.png';
 import mailPng from '../img/contact-mail.png';
 import locationPng from '../img/contact-location.png';
 import sendMailPng from '../img/mail.png';
+import { useState } from 'react';
+import {db, collection, addDoc} from '../firebase/config';
 
 const Contact = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [project, setProject] = useState('');
+  const [message, setMessage] = useState('');
+  const [hasSuccessfullySent, setHasSuccessfullySent] = useState(false);
+
+  const sendMsg = (e) => {
+    e.preventDefault();
+
+    addDoc(collection(db, "messages"), 
+        { name, email, project, message})
+        .then(d => {
+            setHasSuccessfullySent(true);
+        })
+        .catch(err => console.log(err));
+  }
+
   return (
     <div className="contact" id="contact">
         <h1 className="header">Contact</h1>
@@ -38,15 +57,15 @@ const Contact = () => {
                 
             </div>
 
-            <div className="input">
+            <form className="input" onSubmit={sendMsg}>
                 <div>
-                    <input type="text" placeholder='Your name'/>
-                    <input type="email" placeholder='Your email'/>
+                    <input type="text" placeholder='Your name' onChange={(e) => setName(e.target.value)} required/>
+                    <input type="email" placeholder='Your email' onChange={(e) => setEmail(e.target.value)} required/>
                 </div>
-                <input type="text" placeholder='Project'/>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Type your message here...'></textarea>
-                <button>Send Message  <img src={sendMailPng} alt="" /></button>
-            </div>
+                <input type="text" placeholder='Project' onChange={(e) => setProject(e.target.value)} required/>
+                <textarea name="" id="" cols="30" rows="10" placeholder='Type your message here...' onChange={(e) => setMessage(e.target.value)} required></textarea>
+                <button type="submit" className={hasSuccessfullySent? "has-successfully-sent": ""}>Send Message <img src={sendMailPng} alt="" /></button>
+            </form>
         </div>
     </div>
   )
